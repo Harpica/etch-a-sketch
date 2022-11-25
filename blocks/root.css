@@ -1,0 +1,8 @@
+* {
+  border: 2px solid rgb(202, 162, 121);
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+}

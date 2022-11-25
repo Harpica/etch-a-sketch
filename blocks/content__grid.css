@@ -1,0 +1,5 @@
+.content__grid {
+  display: grid;
+  width: 700px;
+  height: 700px;
+}

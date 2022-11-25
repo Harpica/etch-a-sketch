@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-sketch</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="root">
+  <div class="root__container">
+    <header class="header">
+      <h1 class="header__title">Etch-a-sketch</h1>
+      <p class="header__description">Click on grid paper to start drawing. You can choose your own color or take the rainbow preset.</p>
+    </header>
+    <main class="content">
+      <div class="content__column">
+        <form class="content__form" action="#">
+          <label class="content__label" for="grid-value">Pixel size</label>
+          <input class="content__range" type="range" min="1" max="80" step="1" value="40" id="grid-value">
+          <label class="content__label content__label_type_value" for="grid-value">40</label>
+          <button class="button button__new-grid" type="submit" aria-label="submit value">New paper</button>
+        </form>
+        <button class="button button__clear" type="button" aria-label="clear paper">Clear</button>
+        <label class="content__label" for="input-color">Color</label>
+        <input class="content__color" type="color" id="input-color" aria-label="choose color">
+        <button class="button button__rainbow" type="button" aria-label="rainbow color">Rainbow</button>
+      </div>
+      <div class="content__column">
+        <div class="content__grid"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__author">Alexa Kadykova for TheOdinProject</p>
+      </footer>
+  </div>
+</body>
+
+</html>
