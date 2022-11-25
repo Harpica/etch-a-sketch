@@ -1,20 +1,20 @@
 import { Grid, ActionType } from './modules/draw.js';
 
-let gridSizeElement =
+const gridSizeElement =
   document.querySelector('.content__range') as HTMLInputElement;
-let gridElement = document.querySelector('.content__grid') as HTMLElement;
+const gridElement = document.querySelector('.content__grid') as HTMLElement;
 
-let grid = new Grid(parseInt(gridSizeElement.value), gridElement);
+const grid = new Grid(parseInt(gridSizeElement.value), gridElement);
 
-let gridSizeForm = document.querySelector('.content__form') as HTMLElement;
+const gridSizeForm = document.querySelector('.content__form') as HTMLElement;
 
-let gridSizeCounter = document.querySelector('.content__label_type_value') as HTMLElement;
+const gridSizeCounter = document.querySelector('.content__label_type_value') as HTMLElement;
 
-let rainbowButton = document.querySelector('.button__rainbow') as HTMLElement;
+const rainbowButton = document.querySelector('.button__rainbow') as HTMLElement;
 
-let clearButton = document.querySelector('.button__clear') as HTMLElement;
+const clearButton = document.querySelector('.button__clear') as HTMLElement;
 
-let colorInput = document.querySelector('.content__color') as HTMLInputElement;
+const colorInput = document.querySelector('.content__color') as HTMLInputElement;
 
 // Changing size of grid
 gridSizeForm.addEventListener('submit', (evt: Event) => {
