@@ -1,3 +1,5 @@
+@import url(./vendor/fonts.css);
+
 @import url(./blocks/root.css);
 @import url(./blocks/root__container.css);
 @import url(./blocks/button.css);

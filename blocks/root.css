@@ -1,8 +1,24 @@
-* {
+/* * {
   border: 2px solid rgb(202, 162, 121);
-}
+} */
 
 .root {
   display: flex;
   justify-content: center;
+  margin: 0;
+  background: radial-gradient(92.23px at 50% 127.5px, rgb(145, 222, 236) 99%, #0000 101%)
+  calc(50% - 100px) 0/200px 100%,
+radial-gradient(92.23px at 50% -77.5px, #0000 99%, rgb(145, 222, 236) 101%) 50% 50px/200px
+  100% repeat-x;
+
+  font-family: "IndieFlower", Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
+
+/* wave */
+/* background-image: radial-gradient(ellipse 25% 10px at 0% 110%, white 15%, blue 15% 25%, white 25%, transparent 33%), radial-gradient(circle at 50% -10%,  white 15%,  blue 15% 25%, white 25%, transparent 33%), radial-gradient(ellipse at 100% 110%,  white 15%, blue 15% 25%, white 25%, transparent 33%); */
