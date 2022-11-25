@@ -9,6 +9,7 @@
 @import url(./blocks/content__column.css);
 @import url(./blocks/content__form.css);
 @import url(./blocks/content__grid.css);
+@import url(./blocks/content__grid-element.css);
 @import url(./blocks/content__label.css);
 @import url(./blocks/content__label_type_value.css);
 @import url(./blocks/content__range.css);

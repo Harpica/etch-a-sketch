@@ -67,6 +67,7 @@ class Pixel {
   private _createPixelElement(color: string): HTMLElement {
     const pixelElement = document.createElement('div');
     pixelElement.style.backgroundColor = color;
+    pixelElement.classList.add('content__grid-element');
     return pixelElement;
   }
   get getPixelElement(): HTMLElement {
