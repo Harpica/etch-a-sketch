@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 
-<body class="root ">
-  <div class="root__container">
+<body class="root">
+  <div class="root__container wavy-mask">
     <header class="header">
       <h1 class="header__title">Etch-a-sketch</h1>
       <p class="header__description">Click on grid paper to start drawing. You can choose your own color or take the rainbow preset.</p>
     </header>
     <main class="content">
-      <div class="content__column">
+      <div class="content__column popup">
         <form class="content__form" action="#">
           <label class="content__label" for="grid-value">Pixel size</label>
           <input class="content__range" type="range" min="1" max="80" step="1" value="40" id="grid-value">
@@ -29,6 +29,7 @@
         <button class="button button__rainbow" type="button" aria-label="rainbow color">Rainbow</button>
       </div>
       <div class="content__column">
+        <button class="button button__open-popup">Settings</button>
         <div class="content__grid"></div>
       </div>
     </main>

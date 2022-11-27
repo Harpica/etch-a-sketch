@@ -3,6 +3,7 @@
 } */
 
 .root {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -18,6 +19,7 @@ radial-gradient(92.23px at 50% -77.5px, #0000 99%, rgb(145, 222, 236) 101%) 50% 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  text-align: center;
 }
 
 /* wave */

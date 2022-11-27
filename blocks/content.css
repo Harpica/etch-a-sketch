@@ -1,4 +1,12 @@
 .content {
-  display:flex;
-  flex-direction: row;
+  display:grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }

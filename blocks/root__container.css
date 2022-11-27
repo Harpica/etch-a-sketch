@@ -1,5 +1,15 @@
 .root__container {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: rgb(243, 243, 243);
-  height: 100vw;
+  min-height: fit-content;
+  max-width: 850px;
+  width: 100%;
+}
+
+.wavy-mask {
+  --mask:
+    radial-gradient(60.48px at 50% calc(100% - 84.60px),#000 99%,#0000 101%) calc(50% - 72px) 0/144px 100%,
+    radial-gradient(60.48px at 50% calc(100% + 48.60px),#0000 99%,#000 101%) 50% calc(100% - 36px)/144px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }

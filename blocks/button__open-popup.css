@@ -1,0 +1,11 @@
+.button__open-popup {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .button__open-popup {
+    display: block;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+}

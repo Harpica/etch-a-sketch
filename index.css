@@ -6,6 +6,7 @@
 @import url(./blocks/button__clear.css);
 @import url(./blocks/button__new-grid.css);
 @import url(./blocks/button__rainbow.css);
+@import url(./blocks/button__open-popup.css);
 @import url(./blocks/content.css);
 @import url(./blocks/content__color.css);
 @import url(./blocks/content__column.css);
@@ -20,3 +21,5 @@
 @import url(./blocks/header__description.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/footer__author.css);
+@import url(./blocks/popup.css);
+@import url(./blocks/popup_opened.css);

@@ -1,0 +1,11 @@
+.popup_opened {
+  visibility: visible;
+  position: absolute;
+  box-sizing: border-box;
+  min-width: 170px;
+  /* Centralized according to the open-popup button */
+  left: calc(50% - 85px);
+  top: 35px;
+  padding: 10px;
+  border-radius: 10px;
+}

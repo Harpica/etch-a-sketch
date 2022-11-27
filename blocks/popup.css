@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px) {
+  .popup {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(145, 222, 236);
+    max-width: fit-content;
+  }
+}

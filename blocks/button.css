@@ -1,3 +1,18 @@
 .button {
   font-family: "IndieFlower", Arial, sans-serif;
+  padding: 5px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 90px;
+  min-height: 35px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(230, 208, 162);
+  transition: background-color 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(250, 227, 178);
 }
