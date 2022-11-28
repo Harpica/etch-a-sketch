@@ -18,6 +18,11 @@ class Grid {
     for (let i = 0; i < this._size * this._size; i++) {
       const pixel = new Pixel();
       const pixelElement = pixel.getPixelElement;
+      pixelElement.addEventListener('mousedown', () => {
+        if (this._drawer.isDrawing) {
+          this._drawer.action(pixelElement);
+        }
+      });
       pixelElement.addEventListener('mouseover', () => {
         if (this._drawer.isDrawing) {
           this._drawer.action(pixelElement);

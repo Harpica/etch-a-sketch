@@ -2,7 +2,8 @@
   .popup {
     visibility: hidden;
     position: absolute;
-    background-color: rgb(145, 222, 236);
+    background-color: rgba(145, 222, 236, 0.7);
     max-width: fit-content;
+    box-shadow: 0px 0px 5px 5px #c0c0c0;
   }
 }

@@ -1,5 +1,6 @@
 .button {
   font-family: "IndieFlower", Arial, sans-serif;
+  font-weight: 600;
   padding: 5px 15px;
   margin: 0;
   box-sizing: border-box;
@@ -9,10 +10,10 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: rgb(230, 208, 162);
-  transition: background-color 0.4s;
+  background-color:  rgb(231, 172, 84);
+  transition: opacity 0.4s;
 }
 
 .button:hover {
-  background-color: rgb(250, 227, 178);
+  opacity: 0.6;
 }

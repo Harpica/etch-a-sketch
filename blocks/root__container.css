@@ -1,9 +1,12 @@
 .root__container {
   padding: 10px 20px;
-  background-color: rgb(243, 243, 243);
+  /* background-color: rgb(243, 243, 243); */
+  background-image: linear-gradient(rgb(243, 243, 243), rgb(231, 172, 84));
   min-height: fit-content;
   max-width: 850px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .wavy-mask {
@@ -13,3 +16,4 @@
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
+
