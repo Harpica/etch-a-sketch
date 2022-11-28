@@ -5,6 +5,7 @@ class Grid {
   private _drawer: Drawer;
 
   constructor(gridSize: number, gridElement: HTMLElement) {
+    this._size = 0;
     this._gridElement = gridElement;
     this._pixelArray = [];
     this._drawer = new Drawer();
@@ -86,7 +87,7 @@ class Drawer {
   action: Function;
 
   constructor(color: string = 'black') {
-    this.setColor = color;
+    this._color = color;
     this.isDrawing = false;
     this.action = this.draw;
   }
@@ -132,6 +133,6 @@ export enum ActionType {
 
 export { Grid, Pixel, Drawer };
 
-function randomBetween(min, max) {
+function randomBetween(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
