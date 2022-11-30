@@ -1,6 +1,8 @@
-import { Grid, ActionType } from './modules/draw.js';
-import { openPopup, closePopup, togglePopup } from './modules/utils.js';
-// import html2canvas from 'html2canvas';
+import './index.css';
+
+import { Grid, ActionType } from './modules/draw';
+import { togglePopup } from './modules/utils';
+import html2canvas from 'html2canvas';
 
 const gridSizeElement = document.querySelector(
   '.content__range'
@@ -29,7 +31,7 @@ const openPopupButton = document.querySelector(
   '.button__open-popup'
 ) as HTMLElement;
 
-// const takePictureButton = document.querySelector('.button__picture') as HTMLElement;
+const takePictureButton = document.querySelector('.button__picture') as HTMLElement;
 
 // Changing size of grid
 gridSizeForm.addEventListener('submit', (evt: Event) => {
@@ -62,8 +64,8 @@ openPopupButton.addEventListener('click', () => {
   togglePopup(popup);
 });
 
-// takePictureButton.addEventListener('click', () => {
-//   html2canvas(gridElement);
-//   console.log('hello');
-// });
+takePictureButton.addEventListener('click', () => {
+  html2canvas(gridElement);
+  console.log('hello');
+});
 
