@@ -1,16 +1,21 @@
 import './index.css';
 
-import { Grid} from './modules/draw';
-import { Settings } from './modules/Settings';
+import { DrawManager, Grid} from './modules/DrawManager';
+import { SettingsManager } from './modules/Settings';
 import { PopupWithImage } from './modules/PopupWithImage';
+import { SettingsPopup } from './modules/SettingsPopup';
 
-const INITIAL_SIZE = 40;
 const gridElement = document.querySelector('.content__grid') as HTMLElement;
-
-const grid = new Grid(INITIAL_SIZE, gridElement);
+const grid = new Grid(gridElement);
+const settingsPopup = new SettingsPopup('.settings');
 const imagePopup = new PopupWithImage('.popup');
-const settings = new Settings('.settings', grid, imagePopup);
-console.log(settings);
+const drawManager = new DrawManager('black', grid);
+const settings = new SettingsManager(grid, drawManager, settingsPopup, imagePopup);
+
+// Start drawing
+settings.setDrawing();
+drawManager.startDrawing();
+
 
 
 

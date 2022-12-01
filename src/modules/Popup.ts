@@ -5,5 +5,4 @@ export abstract class Popup {
   }
   public abstract open(): void;
   public abstract close(): void;
-  protected abstract _setEventListeners(): void;
 }
