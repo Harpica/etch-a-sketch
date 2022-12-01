@@ -61,6 +61,9 @@ class Grid {
     this._gridElement.style.gridTemplateRows = `repeat(${this._size.toString()}, 1fr)`;
     this._createPixelArray();
   }
+  get getGridElement(): HTMLElement {
+    return this._gridElement;
+  }
 }
 
 class Pixel {

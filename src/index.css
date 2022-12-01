@@ -7,6 +7,7 @@
 @import url(./blocks/button__new-grid.css);
 @import url(./blocks/button__rainbow.css);
 @import url(./blocks/button__open-popup.css);
+@import url(./blocks/button__close.css);
 @import url(./blocks/content.css);
 @import url(./blocks/content__color.css);
 @import url(./blocks/content__column.css);
@@ -23,3 +24,7 @@
 @import url(./blocks/footer__author.css);
 @import url(./blocks/popup.css);
 @import url(./blocks/popup_opened.css);
+@import url(./blocks/image-container.css);
+@import url(./blocks/popup__description.css);
+@import url(./blocks/settings.css);
+@import url(./blocks/settings_opened.css);
